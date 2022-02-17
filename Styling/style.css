@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+/* navbar */
+#navbar{
+    font-family: "Open Sans";
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    position: sticky;
+    font-size: 15px;
+  
+    /* background-color: #E8E8CC; */
+    top: 0px;
+    padding: 20px 10px ;
+}
+#navbar::before{
+    content: "";
+    background-color:#E8E8CC;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+    
+}
+.left{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    display: inline-block;
+}
+.left img{
+height: 90px;     
+border: 2px solid white;
+border-radius: 100px;
+}
+.mid {
+    display: block;
+    width: 36%;
+    margin: 20px auto ;
+    top:20px;
+   
+}
+.right {
+    position: absolute;
+    right: 34px;
+    top: 20px;
+    display: inline-block;
+}
+#navbar ul{
+display: flex;
+    
+}
+#navbar ul li{
+    list-style: none;
+    
+    
+}
+#navbar ul li a{
+  color:#FAFAFA;
+    display:block ;
+    background-color:#064635;
+    padding: 3px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+#navbar ul li a:hover{
+    color:#064635 ;
+    background-color:#FAFAFA;
+}
+
+.btn-right {
+    font-family: "Open Sans";
+    padding: 5;
+    font-weight: 600;
+    margin: 20px 5px;
+    background-color: #064635;
+    color:#FAFAFA;
+    padding: 5px 5px;
+    border: 2px solid #064635;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn-right:hover {
+    background-color: #E8E8CC;
+    text-decoration: none;
+    color: #064635;
+  }
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat";
+  
+}
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('https://media.istockphoto.com/photos/parents-cleaning-up-garbage-from-the-park-with-their-little-daughter-picture-id1255650903?k=20&m=1255650903&s=612x612&w=0&h=A5k-rJdU9unB2iF-9zuuqEKqtSyl5Qqv6Lb3oVb1j0k=') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.7;
+}
+#home h1{
+    font-size: 30px;
+    margin: 5px;
+    text-align: center;
+    font-family: "Ubuntu";
+   
+}
+#home p{
+    color:rgb(3, 0, 7);
+    text-align: center;
+    font-size: 1.5rem;
+    ;
+}
+/* Contact Section */
+
+
+#Join{
+    /* position: relative; */
+   
+}
+#Join::before{
+    /* opacity: 56; */
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background:url("https://media.istockphoto.com/photos/social-network-online-sharing-connection-concept-picture-id1127997676?k=20&m=1127997676&s=612x612&w=0&h=ozRBRc2AXgmgbucPYp2Ld-0UKVPk7s3FUOtc8l1q7dk=") no-repeat  center/cover;
+    background-size:cover;
+}
+#Join-box{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: 34px;
+    
+}
+#Join-box h1{
+font-size: 40px;
+text-align: justify ;
+margin-top: 40px;
+}
+
+#Join-box input,#Join-box textarea{
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 15px;
+    font-size: 1rem;
+    background-color: #F5F5F5;
+
+} 
+
+
+#Join .form-group{
+    padding-left: 25px;
+    font-weight: bold;
+    font-family:"Roboto" ;
+    color: #f2f2f2;
+    z-index: -1;
+}
+
+#Join-box label{
+    font-size: 1rem;
+    
+}
+#btn-Join{
+    font-family: "Open Sans";
+    padding: 10px;
+    font-weight: 600;
+    margin: 20px 5px;
+    background-color: #533535;
+    color:#f2f2f2;
+    padding: 10px ;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align:justify center ;
+}
+#btn-Join:hover {
+    background: #f2f2f2;
+    text-decoration: none;
+    color:#533535;
+  }
+
+/* Heros Section */
+#Heros-container{
+    background: url(https://c4.wallpaperflare.com/wallpaper/341/65/317/anime-demon-slayer-kimetsu-no-yaiba-sword-tanjirou-kamado-hd-wallpaper-preview.jpg) no-repeat center center/cover ;
+   /* background-size: contain; */
+   
+}
+#Heros-container h1{
+    font-size: 40px;
+    color:black ;
+}
+#Heros{
+    margin: 34px;
+    display: flex;
+}
+#Heros .box{ 
+    border: 2px solid green;
+    box-shadow: 2px 2px 2px rgb(2, 70, 17);
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#Heros .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+   border: 2px;
+   border-radius: 10px;
+}
+
+#Heros .box p{
+    font-family: 'Bree Serif', serif;
+} 
+/* Locate dustbin Section */
+#Locate-dustbin{ 
+    position: relative;
+}
+#Locate-dustbin h1{
+    font-size: 40px;
+}
+#Locate-dustbin::before{
+ content: "";
+ position: absolute;
+ background: url('https://media.istockphoto.com/photos/multicoloured-garbage-trash-bins-3d-rendering-picture-id537268686?k=20&m=537268686&s=612x612&w=0&h=4D4T2q0LmZZ1tYDHaxALxqUx-PFdPfx5471BiqGXFGE=') no-repeat center center/cover;
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.6;
+}
+
+#Dustbin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border: 2px  ;
+}
+.dustbin-box{
+    height: 400px;
+     
+ 
+}
+
+#About-us{
+   background:no-repeat center url(https://vitbhopal.ac.in/file/2020/02/Academic-Block-VIT-Bhopal-2-scaled-e1580792952114.jpg);
+   background-size:cover;
+   height: 800px;
+
+}
+#About-us h1{
+    font-size: 40px;
+}
+.About-us-box{ 
+    border: 2px dotted rgb(202, 183, 10);
+    box-shadow: 2px 2px 2px brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+
+
+body{
+    background-color: #FAFAFA;
+}
+/* Utility Section */
+.h-primary{
+  font-family:"Open Sans";
+  
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
